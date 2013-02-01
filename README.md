@@ -1,15 +1,61 @@
 CSS-Hacks
 =========
 
-This repository is to collection of every browser-specific css selector and style attribute hack I've seen.
+If you are trying to do pixel-perfect cross-browser CSS layout, then you have probably ran into problems with IE & other browsers. 
+This repository is a collection of CSS hacks that we often use to have pixel perfect design.
+
+**1) CSS Browser Selector**
+
+[CSS Browser Selector](http://rafael.adm.br/css_browser_selector/) is a very small javascript with just one line which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.
+
+I strongly recommend using this script for your css fixes. You don't have to include two many css(eg. ie7.css, ie8.css) files like the way we do using conditional comments.
+You can just have one stylesheet named @browserfixes.css@ and write all your style tweaks according to browser, operating system, etc.,
+
+```css
+/* Windows IE styles */
+.win.ie { /* Styles to apply on Windows IE*/ }
+.win.ie7 { /* Styles to apply on Windows IE7 */ }
+```
+
+**2) Conditional Comments**
+
+Conditional comments is a easiest way for targetting IE(Internet Explorer). These conditional comments are for IE-only and they’re not supported by any other browser. For other browsers they are just an ordinary comments and therefor, they are safe to use.
+
+The typical usage is as follows:
+
+```html
+<!--[if IE]>    Some CssCode    <![endif]-->
+```
+
+The above code applies to all versions of Internet Explorer, i.e. 5.01, 5.5 and 6.0, but now we want to apply it to versions of Internet Explorer, i.e. 5.01, 5.5 and 6.0, so we will apply the following condition:
+
+```html
+<!--[if lte IE 6]>    Some Css Code    <![endif]-->
+```
+After we finish testing, we remove all hacks to separate file(s), so the main CSS is clean and tidy. This separate file is then called in the header section of a file within conditional comments.
+
+```html
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="ie_hacks.css" /><![endif]-->
+```
+
+Condition is one of the following:
+
+* IE (Any version of IE)
+* lt IE version (Versions less than version)
+* lte IE version(Versions less than or equal to version)
+* IE version (Only version)
+* gte IE version (Versions greater than or equal to version)
+* gt IE version (Versions greater than version)
+
+Version is the version of Internet Explorer, typically 5, 5.5, 6, or 7, you can read more info about this at [Quirksmode](http://www.quirksmode.org/css/condcom.html).
 
 
-**Selector Hacks:**
+**3) Selector Hacks:**
 
 
 ```css
 /* IE6 and below */
-* html #idname  { background: red; }
+* html #idname  { color: red; }
 
 /* IE7 */
 *:first-child+html #dos { color: red }
@@ -71,7 +117,7 @@ html[xmlns*=""]:root #trece  { color: red  }
 body:not(:-moz-handler-blocked) #cuarenta { color: red; }
 ```
 
-**Attributes**
+**4) Attributes**
 
 ```css
 /* Underscore to target - IE6 */
@@ -102,5 +148,24 @@ body:not(:-moz-handler-blocked) #cuarenta { color: red; }
 ```
 
 Thanks to Paul Irish for the Select and Attribute list.
+
+
+**5) Min-Height**
+
+```css
+selector {
+  min-height: 500px;
+  height: auto !important;
+  height: 500px;
+}
+```
+
+**6) Transparent PNGs**
+
+IE dosn’t handle transparent PNG too well. You’ll get an ugly grayish type background wherever it’s supposed to be transparent. And we cann’t just use GIFs because aren’t good for higher resolution images. So we need a CSS hack to fix this.
+
+* [PNG Hack/Fix for IE 6](http://css-tricks.com/snippets/css/png-hack-for-ie-6/)
+* [Twin Helix Png Fix](http://www.twinhelix.com/css/iepngfix/)
+
 
 More to be updated, Stay tuned!
