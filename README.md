@@ -167,5 +167,20 @@ IE dosn’t handle transparent PNG too well. You’ll get an ugly grayish type b
 * [PNG Hack/Fix for IE 6](http://css-tricks.com/snippets/css/png-hack-for-ie-6/)
 * [Twin Helix Png Fix](http://www.twinhelix.com/css/iepngfix/)
 
+**7) Underscore hack**
+
+Will work only in IE5.5, IE6:
+
+Text will be red in Internet Explorer 5.5 and Internet Explorer 6, blue in other browsers.
+
+```css
+.example{
+  color: blue;
+  _color: red;
+}
+```
+
+
+
 
 More to be updated, Stay tuned!
