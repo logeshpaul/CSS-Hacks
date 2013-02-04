@@ -179,6 +179,25 @@ Text will be red in Internet Explorer 5.5 and Internet Explorer 6, blue in other
   _color: red;
 }
 ```
+**8) Overflow Hidden not working on IE7**
+
+It is a well-known bug in IE6 and IE7. To solve it, you need to add position:relative to the container. It should solve your problem.
+
+Problem:
+```html
+<div style="border:red 1px solid; height: 200px; overflow: scroll;">
+  <p>Usually displays content out of the box</p>
+</div>
+```
+
+Solution:
+```html
+<div style="position: relative;">
+  <div style="border: black 1px solid; height: 200px; overflow: scroll;">
+    <p>Usually displays content out of the box</p>
+  </div>
+</div>
+```
 
 
 
