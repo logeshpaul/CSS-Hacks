@@ -185,7 +185,7 @@ It is a well-known bug in IE6 and IE7. To solve it, you need to add position:rel
 
 Problem:
 ```html
-<div style="border:red 1px solid; height: 200px; overflow: scroll;">
+<div style="border:red 1px solid; height: 200px; overflow: auto;">
   <p>Usually displays content out of the box</p>
 </div>
 ```
@@ -193,8 +193,8 @@ Problem:
 Solution:
 ```html
 <div style="position: relative;">
-  <div style="border: black 1px solid; height: 200px; overflow: scroll;">
-    <p>Usually displays content out of the box</p>
+  <div style="border: black 1px solid; height: 200px; overflow: auto;">
+    <p>Will be fixed!</p>
   </div>
 </div>
 ```
