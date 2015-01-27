@@ -18,6 +18,7 @@ This repository is a collection of CSS hacks that we often use to have pixel per
 * [10. Disable input focus on click](#disable-focus)
 * [11. Image Rollover Borders That Do Not Change Layout](#image-rollover)
 * [12. Set color of selected text](#selected-text)
+* [13. Disable user click on elements](#disable-user-click)
 
 
 ### <a name="css-browser-selector"/>1. CSS Browser Selector
@@ -265,5 +266,12 @@ Usaully when you want to set a hover state for image, it will add an extra margi
     background: #ffb7b7; /* Firefox */
 }
 ```
+
+### 13. Set color of selected text <a name="disable-user-click"/>
+---css
+.example {
+  pointer-events: none;
+}
+---
 
 More to be updated, Stay tuned!
