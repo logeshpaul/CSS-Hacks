@@ -267,7 +267,7 @@ Usaully when you want to set a hover state for image, it will add an extra margi
 }
 ```
 
-### 13. Set color of selected text <a name="disable-user-click"/>
+### 13. Disable user click on elements
 ```css
 .example {
   pointer-events: none;
