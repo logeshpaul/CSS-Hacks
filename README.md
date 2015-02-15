@@ -1,27 +1,18 @@
 CSS-Hacks
-=========
+====================
 
 If you are trying to do pixel-perfect cross-browser CSS layout, then you have probably ran into problems with IE & other browsers. 
 This repository is a collection of CSS hacks that we often use to have pixel perfect design.
 
-### Contents
+Table of Contents
+====================
 
-* [1. CSS Browser Selector](#css-browser-selector)
-* [2. Conditional Comments](#conditional-comments)
-* [3. Selector Hacks](#selector-hacks)
-* [4. Attribute Hacks](#attribute-hacks)
-* [5. Min-Height Hack](#min-height-hack)
-* [6. Transparent Images in IE6, IE7](#transparent-images)
-* [7. Underscore Hack](#underscore-hack)
-* [8. Overflow Hidden not working on IE7](#overflow-hidden)
-* [9. Disable Textarea Resizing](#disable-text-resizing)
-* [10. Disable input focus on click](#disable-focus)
-* [11. Image Rollover Borders That Do Not Change Layout](#image-rollover)
-* [12. Set color of selected text](#selected-text)
-* [13. Disable user click on elements](#disable-user-click)
+.. contents::
+   :backlinks: none
+   :local:
 
-
-### <a name="css-browser-selector"/>1. CSS Browser Selector
+1. CSS Browser Selector
+-----------------------
 
 [CSS Browser Selector](http://rafael.adm.br/css_browser_selector/) is a very small javascript with just one line which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.
 
@@ -34,14 +25,15 @@ You can just have one stylesheet named @browserfixes.css@ and write all your sty
 .win.ie7 { /* Styles to apply on Windows IE7 */ }
 ```
 
-### <a name="conditional-comments"/>2. Conditional Comments
+2. Conditional Comments
+-----------------------
 
 Conditional comments is a easiest way for targetting IE(Internet Explorer). These conditional comments are for IE-only and they’re not supported by any other browser. For other browsers they are just an ordinary comments and therefor, they are safe to use.
 
 The typical usage is as follows:
 
 ```html
-<!--[if IE]>    Some CssCode    <![endif]-->
+<!--[if IE]>    Some Css Code    <![endif]-->
 ```
 
 The above code applies to all versions of Internet Explorer, i.e. 5.01, 5.5 and 6.0, but now we want to apply it to versions of Internet Explorer, i.e. 5.01, 5.5 and 6.0, so we will apply the following condition:
@@ -67,8 +59,8 @@ Condition is one of the following:
 Version is the version of Internet Explorer, typically 5, 5.5, 6, or 7, you can read more info about this at [Quirksmode](http://www.quirksmode.org/css/condcom.html).
 
 
-### <a name="selector-hacks"/>3. Selector Hacks 
-
+3. Selector Hacks
+-----------------
 
 ```css
 /* IE6 and below */
@@ -132,7 +124,8 @@ html[xmlns*=""]:root #trece  { color: red  }
 body:not(:-moz-handler-blocked) #cuarenta { color: red; }
 ```
 
-### 4. Attribute Hacks <a name="attribute-hacks"/>
+4. Attribute Hacks
+------------------
 
 ```css
 /* Underscore to target - IE6 */
@@ -164,8 +157,8 @@ body:not(:-moz-handler-blocked) #cuarenta { color: red; }
 
 Thanks to Paul Irish for the Select and Attribute list.
 
-
-### 5. Min-Height Hack <a name="min-height-hack"/>
+5. Min-Height Hack
+------------------
 
 In many cases we need to set some minimum height for a container & when content increses we need that to expand. If you just use <code>min-height</code> property it won't work in all browsers, In order to achieve that you need the follow the below hack.
 
@@ -177,14 +170,16 @@ selector {
 }
 ```
 
-### 6. Transparent Images in IE6, IE7 <a name="transparent-images"/>
+6. Transparent Images in IE6, IE7
+---------------------------------
 
 IE dosn’t handle transparent PNG too well. You’ll get an ugly grayish type background wherever it’s supposed to be transparent. And we cann’t just use GIFs because aren’t good for higher resolution images. So we need a CSS hack to fix this.
 
 * [PNG Hack/Fix for IE 6](http://css-tricks.com/snippets/css/png-hack-for-ie-6/)
 * [Twin Helix Png Fix](http://www.twinhelix.com/css/iepngfix/)
 
-### 7. Underscore Hack <a name="underscore-hack"/>
+7. Underscore Hack
+------------------
 
 Will work only in IE5.5, IE6:
 
@@ -196,7 +191,9 @@ Text will be red in Internet Explorer 5.5 and Internet Explorer 6, blue in other
   _color: red;
 }
 ```
-### 8. Overflow Hidden not working on IE7 <a name="overflow-hidden"/>
+
+8. Overflow Hidden not working on IE7
+-------------------------------------
 
 It is a well-known bug in IE6 and IE7. To solve it, you need to add position:relative to the container. It should solve your problem.
 
@@ -218,7 +215,8 @@ Solution:
 </div>
 ```
 
-### 9. Disable Textarea Resizing <a name="disable-text-resizing"/>
+9. Disable Textarea Resizing
+----------------------------
 
 ```css
 textarea {
@@ -226,7 +224,8 @@ textarea {
 }
 ```
 
-### 10. Disable input focus on click <a name="disable-focus"/>
+10. Disable input focus on click
+--------------------------------
 
 ```css
 input {
@@ -234,7 +233,8 @@ input {
 }
 ```
 
-### 11. Image Rollover Borders That Do Not Change Layout <a name="image-rollover"/>
+11. Image Rollover Borders That Do Not Change Layout
+----------------------------------------------------
 
 Usaully when you want to set a hover state for image, it will add an extra margin for border that will make your slight jumping of layout in some cases, Here is the technique to avoid such jumping on rollover.
 
@@ -255,7 +255,8 @@ Usaully when you want to set a hover state for image, it will add an extra margi
 }
 ```
 
-### 12. Set color of selected text <a name="selected-text"/>
+12. Set color of selected text
+------------------------------
 
 ```css
 ::selection {
@@ -267,10 +268,12 @@ Usaully when you want to set a hover state for image, it will add an extra margi
 }
 ```
 
-### 13. Disable user click on elements
+13. Disable user click on elements
+----------------------------------
+
 ```css
 .example {
-  pointer-events: none;
+    pointer-events: none;
 }
 ```
 
