@@ -267,7 +267,7 @@ Usaully when you want to set a hover state for image, it will add an extra margi
 }
 ```
 
-### 13. Disable user click on elements
+### 13. Disable user click on elements <a name="disable-user-click"/>
 ```css
 .example {
   pointer-events: none;
