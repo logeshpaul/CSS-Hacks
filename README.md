@@ -21,7 +21,7 @@ This repository is a collection of CSS hacks that we often use to have pixel per
 * [13. Disable user click on elements](#disable-user-click)
 
 
-### <a name="css-browser-selector"/>1. CSS Browser Selector
+### 1. CSS Browser Selector <a name="css-browser-selector"/>
 
 [CSS Browser Selector](http://rafael.adm.br/css_browser_selector/) is a very small javascript with just one line which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.
 
@@ -34,7 +34,7 @@ You can just have one stylesheet named @browserfixes.css@ and write all your sty
 .win.ie7 { /* Styles to apply on Windows IE7 */ }
 ```
 
-### <a name="conditional-comments"/>2. Conditional Comments
+### 2. Conditional Comments <a name="conditional-comments"/>
 
 Conditional comments is a easiest way for targetting IE(Internet Explorer). These conditional comments are for IE-only and they’re not supported by any other browser. For other browsers they are just an ordinary comments and therefor, they are safe to use.
 
@@ -67,7 +67,7 @@ Condition is one of the following:
 Version is the version of Internet Explorer, typically 5, 5.5, 6, or 7, you can read more info about this at [Quirksmode](http://www.quirksmode.org/css/condcom.html).
 
 
-### <a name="selector-hacks"/>3. Selector Hacks
+### 3. Selector Hacks <a name="selector-hacks"/>
 
 
 ```css
