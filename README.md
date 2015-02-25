@@ -265,6 +265,11 @@ Usaully when you want to set a hover state for image, it will add an extra margi
 ::-moz-selection {
     background: #ffb7b7; /* Firefox */
 }
+
+_::selection {
+    background: #ffb7b7; /* Everything but Firefox and Internet Explorer ≤8 */
+}
+
 ```
 
 ### 13. Disable user click on elements <a name="disable-user-click"/>
