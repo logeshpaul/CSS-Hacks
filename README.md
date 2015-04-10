@@ -2,7 +2,7 @@ CSS-Hacks
 =========
 
 If you are trying to do pixel-perfect cross-browser CSS layout, then you have probably ran into problems with IE & other browsers.
-This repository is a collection of CSS hacks that we often use to have pixel perfect design.
+This repository is a collection of CSS hacks that we often use to get pixel perfection for your application.
 
 ### Contents
 
@@ -19,6 +19,7 @@ This repository is a collection of CSS hacks that we often use to have pixel per
 * [11. Image Rollover Borders That Do Not Change Layout](#image-rollover)
 * [12. Set color of selected text](#selected-text)
 * [13. Disable user click on elements](#disable-user-click)
+* [14. Disable Text Selection with CSS](#disable-text-selection)
 
 
 ### 1. CSS Browser Selector <a name="css-browser-selector"/>
@@ -276,6 +277,17 @@ _::selection {
 ```css
 .example {
   pointer-events: none;
+}
+```
+
+### 14. Disable Text Selection with CSS <a name="disable-text-selection"/>
+```css
+.disable-selection {
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 ```
 
