@@ -302,6 +302,6 @@ Contribution would be of great help create a nice list
 * Make your feature addition or bug fix
 * Send pull request
 
-**Active Contributers**
+**Active Contributors**
 
 [![Logesh Paul](https://avatars3.githubusercontent.com/u/41541?v=3&s=72)](https://github.com/logeshpaul) [![Sugan Krishnan](https://avatars1.githubusercontent.com/u/680120?v=3&s=72)](https://github.com/rgksugan)
