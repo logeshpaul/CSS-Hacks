@@ -6,20 +6,20 @@ This repository is a collection of CSS hacks that we often use to get pixel perf
 
 ### Contents
 
-* [1. CSS Browser Selector](#css-browser-selector)
-* [2. Conditional Comments](#conditional-comments)
-* [3. Selector Hacks](#selector-hacks)
-* [4. Attribute Hacks](#attribute-hacks)
-* [5. Min-Height Hack](#min-height-hack)
-* [6. Transparent Images in IE6, IE7](#transparent-images)
-* [7. Underscore Hack](#underscore-hack)
-* [8. Overflow Hidden not working on IE7](#overflow-hidden)
-* [9. Disable Textarea Resizing](#disable-text-resizing)
-* [10. Disable input focus on click](#disable-focus)
-* [11. Image Rollover Borders That Do Not Change Layout](#image-rollover)
-* [12. Set color of selected text](#selected-text)
-* [13. Disable user click on elements](#disable-user-click)
-* [14. Disable Text Selection with CSS](#disable-text-selection)
+* [CSS Browser Selector](#css-browser-selector)
+* [Conditional Comments](#conditional-comments)
+* [Selector Hacks](#selector-hacks)
+* [Attribute Hacks](#attribute-hacks)
+* [Min-Height Hack](#min-height-hack)
+* [Transparent Images in IE6, IE7](#transparent-images)
+* [Underscore Hack](#underscore-hack)
+* [Overflow Hidden not working on IE7](#overflow-hidden)
+* [Disable Textarea Resizing](#disable-text-resizing)
+* [Disable input focus on click](#disable-focus)
+* [Image Rollover Borders That Do Not Change Layout](#image-rollover)
+* [Set color of selected text](#selected-text)
+* [Disable user click on elements](#disable-user-click)
+* [Disable Text Selection with CSS](#disable-text-selection)
 
 
 ### 1. CSS Browser Selector <a name="css-browser-selector"/>
