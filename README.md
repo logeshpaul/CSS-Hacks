@@ -20,6 +20,7 @@ This repository is a collection of CSS hacks that we often use to get pixel perf
 * [Set color of selected text](#selected-text)
 * [Disable user click on elements](#disable-user-click)
 * [Disable Text Selection with CSS](#disable-text-selection)
+* [Tamil numbers in list](#tamil-list)
 
 
 ### 1. CSS Browser Selector <a name="css-browser-selector"/>
@@ -290,6 +291,15 @@ _::selection {
     -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 ```
+
+### 15. Tamil numbers in list <a name="tamil-list"/>
+```css
+ol {
+    list-style-type: -moz-tamil;
+    list-style-type: tamil;
+}
+```
+
 
 More to be updated, Stay tuned!
 
